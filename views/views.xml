@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="g2modulojjg.list">
+      <field name="name">g2modulojjg list</field>
+      <field name="model">g2modulojjg.g2modulojjg</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="g2modulojjg.action_window">
+      <field name="name">g2modulojjg window</field>
+      <field name="res_model">g2modulojjg.g2modulojjg</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="g2modulojjg.action_server">
+      <field name="name">g2modulojjg server</field>
+      <field name="model_id" ref="model_g2modulojjg_g2modulojjg"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="g2modulojjg" id="g2modulojjg.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Menu 2" id="g2modulojjg.menu_2" parent="g2modulojjg.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="g2modulojjg.menu_1_list" parent="g2modulojjg.menu_1"
+              action="g2modulojjg.action_window"/>
+    <menuitem name="Server to list" id="g2modulojjg" parent="g2modulojjg.menu_2"
+              action="g2modulojjg.action_server"/>
+    -->
+  </data>
+</odoo>
