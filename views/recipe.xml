@@ -1,0 +1,74 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<odoo>
+    <data>
+        
+        <record model="ir.actions.act_window"
+                id="g2modulojjg.action_window_recipe">
+            <field name="name">Recipe</field>
+            <field name="res_model">g2modulojjg.recipe</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem name="Receta Management"
+                  id="g2modulojjg.receta"
+                  parent="g2modulojjg.menu_2"
+                  action="g2modulojjg.action_window_recipe"/>
+        
+        <record model="ir.ui.view" id="recipe_form">
+            <field name="name">Recipe</field>
+            <field name="model">g2modulojjg.recipe</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="titulo" colspan="2"/>
+                            <field name="name"/>
+                            <field name="idRecipe"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="titulo" colspan="2"/>
+                            <field name="preparation"/>
+                            <field name="createDate"/>
+                            <field name="dietist1"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="recipe_tree_view">
+            <field name="name">Recipe</field>
+            <field name="model">g2modulojjg.recipe</field>
+            <field name="arch" type="xml">
+                <tree string="Recipe Tree">
+                    
+                    <field name="name"/>
+                    <field name="idRecipe"/>
+                    <field name="preparation"/>
+                    <field name="createDate"/>
+                        
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="recipe_search_view">
+            <field name="name">Recipe</field>
+            <field name="model">g2modulojjg.recipe</field>
+            <field name="arch" type="xml">
+                <search>
+                    
+                    <field name="name"/>
+                    <field name="idRecipe"/>
+                    <field name="preparation"/>
+                    <field name="createDate"/>
+                        
+                </search>
+            </field>
+        </record>
+
+    </data>
+
+</odoo>
