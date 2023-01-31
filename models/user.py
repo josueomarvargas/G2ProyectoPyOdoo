@@ -25,4 +25,5 @@ class user(models.Model):
     dietist_diest= fields.One2many('g2modulojjg.diet', 'idDiet', string= "Diest")
     dietist_recipe= fields.One2many('g2modulojjg.recipe', 'idRecipe', string="Recipe")
     client_diets=fields.Many2many('g2modulojjg.diet', 'idDiet', string= "Diet")
+
  

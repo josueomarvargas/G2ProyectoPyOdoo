@@ -39,13 +39,12 @@
     </record>
     -->
   
-   <!--josue
-    <menuitem name="g2modulojjg" id="g2modulojjg.menu_root"/>-->
+   
+    <menuitem name="g2modulojjg" id="g2modulojjg.menu_root"/>
     <!-- menu categories -->
-   <!--josue
+ 
 
     <menuitem name="Nutrivago" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
-     -->
     <!-- actions -->
         <!--
 
