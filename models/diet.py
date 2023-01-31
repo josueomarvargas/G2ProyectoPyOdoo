@@ -8,7 +8,7 @@ class diet(models.Model):
     idDiet = fields.Char(required=True)
     timeDiet = fields.Integer()
     objectiveDiet = fields.Date()
-    dietType = fields.Selection([('OMNIVORO'),('VEGANA'),('VEGETARIANO')],string="Tipo Dieta")
+   # dietType = fields.Selection([('OMNIVORO'),('VEGANA'),('VEGETARIANO')],string="Tipo Dieta")
     recipes = fields.Many2many('g2modulojjg.recipe',string="Recipe")
     clients = fields.Many2many('res.users', string="Clients")
     dietits = fields.Many2one('g2modulojjg.diet', ondelete='cascade',string="Dietist", required=True)
