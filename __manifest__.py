@@ -3,11 +3,14 @@
     'name': "g2modulojjg",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        CRUD de una aplicacion de dietas""",
 
     'description': """
-        Long description of module's purpose
+        Aplicacion para dietistas, clientes y un administrador.
+        El dietista creara dietas, recetas, alimemtos; el cliente
+        podra tener un dietista y seguir una dieta como tambien ver el
+        seguimiento de su dieta. Por ultimo el administrador podra crear tanto
+        clientes como dietista  y tambien podra crear dietas, recetas y alimentos.
     """,
 
     'author': "My Company",
@@ -24,8 +27,14 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+       # 'security/ir.model.access.csv',
+        #'views/security.xml',
         'views/views.xml',
+        'views/foods.xml',
+        'views/recipes.xml',
+        'views/diet.xml',
+        'views/userDiet.xml',
+        'views/userRecipes.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode

@@ -1,5 +1,12 @@
 <odoo>
   <data>
+      
+      <menuitem name="Nutrivago" id="g2modulojjg.menu_root"/>
+      
+      <menuitem name="Nutrivago Management"
+      id="g2modulojjg.menu_2"
+      parent="g2modulojjg.menu_root"/>
+ 
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="g2modulojjg.list">
@@ -15,10 +22,10 @@
     </record>
     -->
 
-    <!-- actions opening views on models -->
     <!--
-    <record model="ir.actions.act_window" id="g2modulojjg.action_window">
-      <field name="name">g2modulojjg window</field>
+
+    <record model="ir.actions.act_window" id="g2modulojjg.action_window1">
+      <field name="name">Nutrivago Activities</field>
       <field name="res_model">g2modulojjg.g2modulojjg</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -38,22 +45,25 @@
       </field>
     </record>
     -->
-
-    <!-- Top menu item -->
-    <!--
+  
+   
     <menuitem name="g2modulojjg" id="g2modulojjg.menu_root"/>
-    -->
     <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
-    <menuitem name="Menu 2" id="g2modulojjg.menu_2" parent="g2modulojjg.menu_root"/>
-    -->
+ 
+
+    <menuitem name="Food" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Recipe" id="g2modulojjg.menu_2" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Diet" id="g2modulojjg.menu_3" parent="g2modulojjg.menu_root"/>
+
     <!-- actions -->
-    <!--
-    <menuitem name="List" id="g2modulojjg.menu_1_list" parent="g2modulojjg.menu_1"
-              action="g2modulojjg.action_window"/>
+        <!--
+
+    <menuitem name="Activities Nutrivago" 
+              id="g2modulojjg.menu_1_list" 
+              parent="g2modulojjg.menu_1"
+              action="g2modulojjg.action_window1"/>
     <menuitem name="Server to list" id="g2modulojjg" parent="g2modulojjg.menu_2"
               action="g2modulojjg.action_server"/>
-    -->
+-->
   </data>
-</odoo>
+</odoo> 
