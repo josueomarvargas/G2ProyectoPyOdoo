@@ -1,2 +1,3 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_g2modulojjg_g2modulojjg,g2modulojjg.g2modulojjg,model_g2modulojjg_g2modulojjg,,1,0,0,0
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+food_manager,food manager, model_g2modulojjg_food,group_manager,1,1,1,1
+food_read_all,food all,model_g2modulojjg_food,1,0,0,0

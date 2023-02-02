@@ -13,8 +13,16 @@ class food(models.Model):
     insertDate= fields.Date()
     recipes= fields.Many2many('g2modulojjg.recipe',string= "Recipes")
     dietist= fields.Many2one('res.users',ondelete='cascade', string="Dietist", required=True)
+
+    @api.constrains('insertDate')
+    def _verify_date(self):
+        for r in self:
+            if fields.Date.from_string(r.insertDate) > fields.Date.from_string(fields.Date.today()):
+                raise exceptions.ValidationError("Date cannot be greater than")
+    
     @api.onchange('calories','carbohydrate','totalFat','calories','proteins','calories')
     def _verify_valid_Positive(self):
+
         if self.calories < 0:
             return {
                 'warning': {
@@ -43,4 +51,3 @@ class food(models.Model):
                     'message': "The number of available proteins may not be negative",
                 },
             }
-   
