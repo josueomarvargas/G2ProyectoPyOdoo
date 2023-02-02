@@ -27,9 +27,14 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+       # 'security/ir.model.access.csv',
+        #'views/security.xml',
         'views/views.xml',
         'views/foods.xml',
+        'views/recipes.xml',
+        'views/diet.xml',
+        'views/userDiet.xml',
+        'views/userRecipes.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode

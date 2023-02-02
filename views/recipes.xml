@@ -13,7 +13,7 @@ and open the template in the editor.
             <field name="view_mode">tree,form</field>
         </record>
         
-        <menuitem name="Receta Management"
+        <menuitem name="Recipe Management"
                   id="g2modulojjg.receta"
                   parent="g2modulojjg.menu_2"
                   action="g2modulojjg.action_window_recipe"/>
@@ -25,15 +25,14 @@ and open the template in the editor.
                 <form>
                     <group colspan="4">
                         <group colspan="2" col="2">
-                            <separator string="titulo" colspan="2"/>
+                            <separator string="fields" colspan="2"/>
                             <field name="name"/>
-                            <field name="idRecipe"/>
-                        </group>
-                        <group colspan="2" col="2">
-                            <separator string="titulo" colspan="2"/>
+                            <field name="idRecipe"/>                        
                             <field name="preparation"/>
                             <field name="createDate"/>
                             <field name="dietist1"/>
+                            <field name="foods"/>
+                            <field name="diets"/>
                         </group>
                     </group>
                 </form>

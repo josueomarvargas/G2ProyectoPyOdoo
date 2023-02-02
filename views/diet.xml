@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" 
+                id="g2modulojjg.action_window_diet">
+            <field name="name">Diet</field>
+            <field name="res_model">g2modulojjg.diet</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    
+        <menuitem name="Dieta Management" 
+                  id="g2modulojjg.dieta" 
+                  parent="g2modulojjg.menu_3"
+                  action="g2modulojjg.action_window_diet"/>
+    
+        <record model= "ir.ui.view" id="diet_form_view">
+            <field name="name">diet.formm</field>
+            <field name="model">g2modulojjg.diet</field>
+            <field name="arch" type="xml">
+                <form string="Diet From">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="idDiet"/>
+                            <field name="timeDiet"/>
+                            <field name="objectiveDiet"/>
+                            <field name="recipes"/>
+                            <field name="clients"/>
+                            <field name="dietits"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+              
+        <record model= "ir.ui.view" id="diet_tree_view">
+            <field name="name">diet.tree</field>
+            <field name="model">g2modulojjg.diet</field>
+            <field name="arch" type="xml">
+                <tree string="Diet Tree">
+                    <field name="name"/>
+                    <field name="idDiet"/>
+                </tree>
+            </field>
+        </record>
+              
+        <record model= "ir.ui.view" id="diet_search_view">
+            <field name="name">diet.search</field>
+            <field name="model">g2modulojjg.diet</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="idDiet"/>
+                    <field name="timeDiet"/>
+                </search>
+            </field>
+        </record>    
+    </data>
+</odoo>

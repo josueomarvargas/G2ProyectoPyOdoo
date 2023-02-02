@@ -51,7 +51,10 @@
     <!-- menu categories -->
  
 
-    <menuitem name="Nutrivago" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Food" id="g2modulojjg.menu_1" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Recipe" id="g2modulojjg.menu_2" parent="g2modulojjg.menu_root"/>
+    <menuitem name="Diet" id="g2modulojjg.menu_3" parent="g2modulojjg.menu_root"/>
+
     <!-- actions -->
         <!--
 
